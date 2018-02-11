@@ -1,0 +1,88 @@
+﻿@model Ascentic.WorkFlow.MVCClient.Models.TaskModel
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Task Details</h2>
+<h3>Task Id - @Html.DisplayFor(model => model.TaskId) - @Html.DisplayFor(model => model.Assignee) - @Html.DisplayFor(model => model.Status)</h3>
+@if (Model.Status == "To Do")
+{
+    @Html.ActionLink("Make Progress", "SetInProgress", new { id = Model.TaskId }, new { @class = "btn btn-warning", @style= "position:absolute;left:550px;top:120px" });
+}
+@if (Model.Status == "In Progress")
+{
+    @Html.ActionLink("Done Task", "SetDone", new { id = Model.TaskId }, new { @class = "btn btn-success", @style = "position:absolute;left:610px;top:120px" });
+}
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TaskId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TaskId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Assignee)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Assignee)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AssignedBy)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AssignedBy)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AgreedCompletionDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AgreedCompletionDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ActualCompletionDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ActualCompletionDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreatedDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreatedDate)
+        </dd>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Back to List", "ToDoIndex")
+</p>
