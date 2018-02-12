@@ -1,0 +1,111 @@
+﻿@model IEnumerable<Ascentic.WorkFlow.MVCClient.Models.TaskModel>
+
+@{
+    ViewBag.Title = "To Do Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Tasks to do.</h2>
+
+<div class="icon-nav lg-only">
+    <a href='@Url.Action("ToDoIndex", "Executive")' title="To Do"><span style="position:relative;top:-20px;left:1px">@ViewBag.ToDoCount</span>To Do</a>
+    <a href='@Url.Action("InProgressIndex", "Executive")' title="In Progress"><span style="position:relative;top:-20px;left:-12px">@ViewBag.InProgressCount</span>In Progress</a>
+    <a href='@Url.Action("DoneIndex", "Executive")' title="Done"><span style="position:relative;top:-20px;left:0px">@ViewBag.DoneCount</span>Done</a>
+    <a href='@Url.Action("DelayedIndex", "Executive")' title="Delayed"><span style="position:relative;top:-20px;left:8px">@ViewBag.DelayedCount</span>Delayed</a>
+</div>
+
+<table class="table">
+    <tr>
+        <th></th>
+        <th>
+            @Html.DisplayNameFor(model => model.TaskId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Assignee)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AssignedBy)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Status)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AgreedCompletionDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CreatedDate)
+        </th>
+        <th></th>
+    </tr>
+    @if (Model != null)
+    {
+        foreach (var item in Model)
+        {
+            if (item.AgreedCompletionDate == DateTime.Now.AddDays(1).Date || item.AgreedCompletionDate == DateTime.Now.Date || item.AgreedCompletionDate < DateTime.Now.Date)
+            {
+                <tr>
+                    <td style="color:red">
+                        <i class="glyphicon glyphicon-exclamation-sign"></i>
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TaskId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Description)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Assignee)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.AssignedBy)
+                    </td>
+                    <td style="background-color:blue; color:white">
+                        @Html.DisplayFor(modelItem => item.Status)
+                    </td>
+                    <td style="color:red">
+                        @Html.DisplayFor(modelItem => item.AgreedCompletionDate)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CreatedDate)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Details", "Details", new { id = item.TaskId }, new { @class = "btn btn-sm btn-info" })
+                    </td>
+                </tr>
+            }
+            else
+            {
+                <tr>
+                    <td></td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TaskId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Description)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Assignee)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.AssignedBy)
+                    </td>
+                    <td style="background-color:blue; color:white">
+                        @Html.DisplayFor(modelItem => item.Status)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.AgreedCompletionDate)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CreatedDate)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Details", "Details", new { id = item.TaskId }, new { @class = "btn btn-sm btn-info" })
+                    </td>
+                </tr>
+            }
+        }
+    }
+</table>

@@ -1,0 +1,5 @@
+C:\Users\tashk\Desktop\Ascentic Workflow Demo\Ascentic.WorkFlow\Ascentic.WorkFlow.Contracts\bin\Debug\Ascentic.WorkFlow.Contracts.dll
+C:\Users\tashk\Desktop\Ascentic Workflow Demo\Ascentic.WorkFlow\Ascentic.WorkFlow.Contracts\bin\Debug\Ascentic.WorkFlow.Contracts.pdb
+C:\Users\tashk\Desktop\Ascentic Workflow Demo\Ascentic.WorkFlow\Ascentic.WorkFlow.Contracts\obj\Debug\Ascentic.WorkFlow.Contracts.csprojResolveAssemblyReference.cache
+C:\Users\tashk\Desktop\Ascentic Workflow Demo\Ascentic.WorkFlow\Ascentic.WorkFlow.Contracts\obj\Debug\Ascentic.WorkFlow.Contracts.dll
+C:\Users\tashk\Desktop\Ascentic Workflow Demo\Ascentic.WorkFlow\Ascentic.WorkFlow.Contracts\obj\Debug\Ascentic.WorkFlow.Contracts.pdb

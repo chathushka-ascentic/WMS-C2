@@ -1,0 +1,58 @@
+﻿@model Ascentic.WorkFlow.MVCClient.Models.TaskModel
+
+@{
+    ViewBag.Title = "EditTask";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Edit Task</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.Hidden("TaskId", Model.TaskId)
+    @Html.Hidden("AssignedBy", Model.AssignedBy)
+    @Html.Hidden("Status", Model.Status)
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.Description, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextAreaFor(model => model.Description, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Assignee, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.Assignee, new List<SelectListItem>
+                 {
+                    new SelectListItem{ Text="exec1@some.com", Value = "exec1@some.com" },
+                    new SelectListItem{ Text="exec2@some.com", Value = "exec2@some.com" }
+                 }, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Assignee, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.AgreedCompletionDate, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.AgreedCompletionDate, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.AgreedCompletionDate, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Update" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

@@ -1,0 +1,17 @@
+C:\Users\tashk\Desktop\Ascentic Workflow Demo\Ascentic.WorkFlow\Ascentic.WorkFlow.EndSystems\bin\Debug\Ascentic.WorkFlow.EndSystems.dll.config
+C:\Users\tashk\Desktop\Ascentic Workflow Demo\Ascentic.WorkFlow\Ascentic.WorkFlow.EndSystems\bin\Debug\Ascentic.WorkFlow.EndSystems.dll
+C:\Users\tashk\Desktop\Ascentic Workflow Demo\Ascentic.WorkFlow\Ascentic.WorkFlow.EndSystems\bin\Debug\Ascentic.WorkFlow.EndSystems.pdb
+C:\Users\tashk\Desktop\Ascentic Workflow Demo\Ascentic.WorkFlow\Ascentic.WorkFlow.EndSystems\bin\Debug\Ascentic.WorkFlow.Contracts.dll
+C:\Users\tashk\Desktop\Ascentic Workflow Demo\Ascentic.WorkFlow\Ascentic.WorkFlow.EndSystems\bin\Debug\AutoMapper.dll
+C:\Users\tashk\Desktop\Ascentic Workflow Demo\Ascentic.WorkFlow\Ascentic.WorkFlow.EndSystems\bin\Debug\EntityFramework.dll
+C:\Users\tashk\Desktop\Ascentic Workflow Demo\Ascentic.WorkFlow\Ascentic.WorkFlow.EndSystems\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\tashk\Desktop\Ascentic Workflow Demo\Ascentic.WorkFlow\Ascentic.WorkFlow.EndSystems\bin\Debug\Ascentic.WorkFlow.Contracts.pdb
+C:\Users\tashk\Desktop\Ascentic Workflow Demo\Ascentic.WorkFlow\Ascentic.WorkFlow.EndSystems\bin\Debug\AutoMapper.xml
+C:\Users\tashk\Desktop\Ascentic Workflow Demo\Ascentic.WorkFlow\Ascentic.WorkFlow.EndSystems\bin\Debug\EntityFramework.xml
+C:\Users\tashk\Desktop\Ascentic Workflow Demo\Ascentic.WorkFlow\Ascentic.WorkFlow.EndSystems\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\tashk\Desktop\Ascentic Workflow Demo\Ascentic.WorkFlow\Ascentic.WorkFlow.EndSystems\obj\Debug\Ascentic.WorkFlow.EndSystems.csprojResolveAssemblyReference.cache
+C:\Users\tashk\Desktop\Ascentic Workflow Demo\Ascentic.WorkFlow\Ascentic.WorkFlow.EndSystems\obj\Debug\Ascentic.WorkFlow.EndSystems.dll
+C:\Users\tashk\Desktop\Ascentic Workflow Demo\Ascentic.WorkFlow\Ascentic.WorkFlow.EndSystems\obj\Debug\Ascentic.WorkFlow.EndSystems.pdb
+C:\Users\tashk\Desktop\Ascentic Workflow Demo\Ascentic.WorkFlow\Ascentic.WorkFlow.EndSystems\obj\Debug\Ascentic.WorkFlow.EndSystems.Migrations.initialCreate.resources
+C:\Users\tashk\Desktop\Ascentic Workflow Demo\Ascentic.WorkFlow\Ascentic.WorkFlow.EndSystems\obj\Debug\Ascentic.WorkFlow.EndSystems.csproj.GenerateResource.Cache
+C:\Users\tashk\Desktop\Ascentic Workflow Demo\Ascentic.WorkFlow\Ascentic.WorkFlow.EndSystems\obj\Debug\Ascentic.WorkFlow.EndSystems.Migrations.test.resources
